@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "golive": "npm run build && cp -rf ./dist/* ../personalsite2018/docs/vidsynth && cp -rf ./dist/* ../personalsite2018/static/vidsynth && cd ../personalsite2018 && git add ./docs/vidsynth && git commit -m \"Updated vidsynth\" && git push && cd ../vidsynth"
   },
   "dependencies": {
     "core-js": "^3.6.5",
